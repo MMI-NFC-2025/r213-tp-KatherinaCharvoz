@@ -1,26 +1,10 @@
 ---
-import layout from"../styles/global.css";
+import Layout from "../layouts/Layout.astro";
 ---
 
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>Document</title>
-	</head>
-	<body>
-		<layout title="Accueil">
-	<h1>Accueil</h1>
-		<h2>Bienvenue sur ??? notre agence immobilière</h2>
-		---
-		const titrePage = "Nos offres";
-		---
-		<h1>{}</h1>
-		<p>Liste de nos offres immobilières.</p>
-	</layout>
-		
-	</body>
-</html>
+<Layout title="Acceuil">
+	<h1 class="text-2xl">Accueil</h1>
+	<h2>Bienvenue sur ??? notre agence immobilière</h2>
+	<h1></h1>
+	<p>Liste de nos offres immobilières.</p>
+</Layout>
