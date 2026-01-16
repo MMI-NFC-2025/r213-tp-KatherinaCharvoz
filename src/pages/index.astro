@@ -1,6 +1,7 @@
 ---
-import "../styles/global.css";
+import layout from"../styles/global.css";
 ---
+
 
 <html lang="en">
 	<head>
@@ -11,7 +12,15 @@ import "../styles/global.css";
 		<title>Document</title>
 	</head>
 	<body>
-		<h1>Accueil</h1>
+		<layout title="Accueil">
+	<h1>Accueil</h1>
 		<h2>Bienvenue sur ??? notre agence immobilière</h2>
+		---
+		const titrePage = "Nos offres";
+		---
+		<h1>{}</h1>
+		<p>Liste de nos offres immobilières.</p>
+	</layout>
+		
 	</body>
 </html>
