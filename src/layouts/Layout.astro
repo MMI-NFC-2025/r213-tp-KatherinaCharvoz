@@ -13,8 +13,19 @@ const title = Astro.props.title;
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <title>{title}</title>
     </head>
+    
     <body>
         <Header />
-        <slot />
+        <main>
+            <p>L’AGENCE 8 se distingue par son implantation dans un Paris historique mais avant tout résidentiel. Notre connaissance de ce biotope participe de notre adaptation à chaque demande et de notre approche personnalisée.
+C’est la compréhension d’un Paris qui bouge et d’une clientèle exigeante qui nous permet d’apporter un conseil et un suivi sur mesure avec une synergie entre écoute, empathie et service de qualité.</p>
+<button class="">Voir toutes nos annonces</button>
+<button class="">Comparer les prix</button>
+<button class="">Ajouter aux favoris</button>
+        <slot />    
+        </main>
+        <footer>
+        
+    </footer>
     </body>
 </html>
