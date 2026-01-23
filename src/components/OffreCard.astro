@@ -1,0 +1,31 @@
+---
+import Offres from "../pages/offres.astro"
+const { nomMaison, prix, surface, adresse, imgUrl, favori } = Astro.props;
+---
+
+<div class="offre" data-favori={favori}>
+  <img src={imgUrl} alt={nomMaison} />
+  <h2>{nomMaison}</h2>
+  <p>{adresse}</p>
+  <p>{surface} m² — {prix} €</p>
+</div>
+
+    adresse: "2821 Lake Sevilla, Palm Harbor, TX",
+    favori: true,
+    id: "64l3n8nar836i5j",
+    nbChambres: 4,
+    nbSdb: 2,
+    nomMaison: "Beverly Springfield",
+    prix: 2700,
+    surface: 45,
+    imgUrl: "image1.png",
+
+<script>
+import { imageConfig } from "astro:assets"
+
+    <Card nomMaison={offre.nomMaison}
+   {offres.map((offres) => (
+    <OffreCard {}
+    
+)} 
+</script>
